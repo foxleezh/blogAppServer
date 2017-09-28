@@ -1,4 +1,4 @@
-package com.example.demo.timer;
+package com.app.server.timer;
 
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
@@ -7,14 +7,14 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 @Component
-public class ExampleTimer {
+public class HomeTimer {
 
     SimpleDateFormat dateFormat = new SimpleDateFormat("HH:mm:ss");
 
     /*每100秒执行一次*/
     @Scheduled(fixedRate = 100000)
     public void timerRate() {
-        System.out.println("我");
+        System.out.println("我执行一次。。。");
     }
 
 
