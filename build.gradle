@@ -14,7 +14,7 @@ buildscript {
 apply plugin: 'java'
 apply plugin: 'eclipse-wtp'
 apply plugin: 'org.springframework.boot'
-//apply plugin: 'war'
+apply plugin: 'war'
 
 group = 'com.example'
 version = '0.0.1-SNAPSHOT'
@@ -37,9 +37,8 @@ dependencies {
 	compile('org.springframework.boot:spring-boot-starter-web')
 	compile("org.mybatis.spring.boot:mybatis-spring-boot-starter:1.3.0")
 	compile('org.projectlombok:lombok')
-//	compile('com.fasterxml.jackson.core:jackson-core')
-//	compile('com.fasterxml.jackson.core:jackson-databind')
+	compile("org.jsoup:jsoup:1.9.2")
 	runtime('mysql:mysql-connector-java')
-//	providedRuntime('org.springframework.boot:spring-boot-starter-tomcat')
+	providedRuntime('org.springframework.boot:spring-boot-starter-tomcat')
 	testCompile('org.springframework.boot:spring-boot-starter-test')
 }

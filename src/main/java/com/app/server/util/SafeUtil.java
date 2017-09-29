@@ -1,7 +1,5 @@
 package com.app.server.util;
 
-import com.sun.istack.internal.Nullable;
-
 import java.security.MessageDigest;
 
 import static com.app.server.util.Util.isEmpty;
